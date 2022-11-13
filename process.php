@@ -5,7 +5,7 @@
 
 //...................................
 
-$postUrl = "https://api.1card.com.bd/odootest/pay";
+$postUrl = "https://api.1card.com.bd/dis-english-shurjopay/pay";
 $ch = curl_init();
 $header = array("Accept:application/json");
 
@@ -22,8 +22,8 @@ $data = array(
     'cus_country'=> $_POST['cus_country'],
     'cus_phone'=> $_POST['cus_phone'],
     'currency_code'=> $_POST['currency_code'],
-    'success'=> 'http://localhost/1card-test/success.php',
-    'redirect'=> 'http://localhost/1card-test/redirect.php'
+    'success'=> 'http://1cardtestapi.kh/success.php',
+    'redirect'=> 'http://1cardtestapi.kh/redirect.php'
 );
 
 curl_setopt($ch, CURLOPT_URL, $postUrl);

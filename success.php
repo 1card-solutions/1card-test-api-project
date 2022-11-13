@@ -10,7 +10,7 @@ if(isset($_POST['reff_id'])){
 
 // Payment Verify Api
 function validationCheck($reff_id){
-    $postUrl = "https://api.1card.com.bd/odootest/validationserveripn";
+    $postUrl = "https://api.1card.com.bd/dis-english-shurjopay/validationserveripn";
     $ch = curl_init();
     $header = array("Accept:application/json");
 
